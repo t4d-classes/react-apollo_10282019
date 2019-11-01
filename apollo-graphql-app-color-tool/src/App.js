@@ -8,6 +8,8 @@ import { ColorForm } from './components/ColorForm';
 
 const APP_QUERY = gql`
   query AppQuery {
+    headerText @client 
+    toggle @client
     colors {
       id
       name
@@ -26,12 +28,19 @@ const APPEND_COLOR_MUTATION = gql`
   }
 `;
 
+const TOGGLE_MUTATION = gql`
+  mutation Toggle {
+    toggle @client
+  }
+`;
+
 
 export const App = () => {
   
   const { loading, data, error } = useQuery(APP_QUERY);
 
   const [ mutateAppendColor ] = useMutation(APPEND_COLOR_MUTATION);
+  const [ mutateToggle ] = useMutation(TOGGLE_MUTATION);
 
   const appendColor = color => {
 
@@ -65,12 +74,17 @@ export const App = () => {
   if (loading) return <div>Loading!</div>;
   if (error) return <div>Error: {error}</div>;
 
+  const toggle = () => {
+    mutateToggle({});
+  };
+
   return <>
-    <ToolHeader headerText="Color Tool" />
+    <ToolHeader headerText={data.headerText.text} />
     <UnorderedList items={data.colors}>
       {(item) => item.id + ': ' + item.name + ' - ' + item.hexcode}
     </UnorderedList>
     <ColorForm buttonText="Add Color" onSubmitColor={appendColor} />
+    <button type="button" onClick={toggle}>{data.toggle ? 'On' : 'Off'}</button>
   </>;
 };
 
