@@ -1,0 +1,9 @@
+Exercise 11
+
+https://github.com/t4d-classes/react-apollo_10282019
+
+1. Implement the code to save and cancel the car edit row. When the save button is clicked, car data in the form is used to replace the original car in the array. Whene the cancel button is clicked, the car data in the form is discarded.
+
+2. When save car, cancel car, add car, or delete car are clicked, the edit row (if something is being edited) is changed to a view row.
+
+3. Ensure it works.

@@ -1,0 +1,17 @@
+Exercise 12
+
+1. Create a new Car Edit Row component named AltCarEditRow using class-based component.
+
+Id: 1
+Make: Input
+Model: Input
+Year: Input
+Color: Input
+Price: Input
+
+ Save Cancel
+
+2. Pass AltCarEditRow component as a prop named CarEditRow into Car Table. When the Edit button is clicked on a row, display the component passed in as the CarEditRow prop.
+
+3. Ensure all functionality works.
+

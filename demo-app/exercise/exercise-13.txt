@@ -1,0 +1,11 @@
+Exercise 13
+
+1. When the page loads, set the focus on the Car Form make field.
+
+2. When the edit button is clicked, set the focus on the Car Edit Row make field.
+
+3. When the save button or cancel button is clickec, set the focus on the Car For make field.
+
+4. After adding or deleting a car, set the focus on the Car Form make field.
+
+5. Ensure it works!

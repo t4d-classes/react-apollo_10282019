@@ -1,0 +1,13 @@
+Exercise 4
+
+https://github.com/t4d-classes/react-apollo_10282019
+
+1. Move the array of cars to index.js.
+
+2. Pass the array of cars into Car Tool via props.
+
+3. Use destructuring to access the array of cars.
+
+4. Customize the header h1 element text of Car Tool using a prop.
+
+5. Ensure it works.

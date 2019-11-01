@@ -1,0 +1,17 @@
+Exercise 1
+
+https://github.com/t4d-classes/react-apollo_10282019
+
+1. Create a new component named Car Tool in the components folder
+
+2. In the Car Tool component, display a header with the content of 'Car Tool'.
+
+For the HTML structure, produce a structure which look like this:
+
+<header>
+  <h1>Car Tool</h1>
+</header>
+
+3. Import Car Tool component into index.js and display it beneath the Hello World component.
+
+4. Ensure it works!

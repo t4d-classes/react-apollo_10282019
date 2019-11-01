@@ -1,0 +1,7 @@
+Exercise 8
+
+1. Move the car form to its own component.
+
+2. Utilize the car form in Car Tool.
+
+3. Ensure it works.

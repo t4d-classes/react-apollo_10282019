@@ -1,0 +1,17 @@
+Exercise 5
+
+https://github.com/t4d-classes/react-apollo_10282019
+
+1. Solve world hunger.
+
+2. Solve world peace.
+
+3. Create a new component named Tool Header. Move the header and h1 element from Car Tool component to the new Tool Header component. Make sure content of the h1 is configurable with a prop. Add a prop type of string for the headerText and set a default prop value of 'The Tool'.
+
+4. Create a new component named Car Table. Move the table from Car Tool to the new Car Table component. Setup the appropriate props for passing the array of cars including prop types.
+
+5. Utilize Car Table in Car Tool replacing the original car table display the table of cars.
+
+6. Create a new component named Car View Row. Move the row of car data to the new component. Utilize Car View Row within Car Table to display a row of car data.
+
+7. Ensure it works then you can leave.

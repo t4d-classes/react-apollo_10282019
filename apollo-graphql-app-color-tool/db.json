@@ -1,0 +1,194 @@
+{
+  "colors": [
+    {
+      "id": 1,
+      "name": "red",
+      "hexcode": "#ff0000"
+    },
+    {
+      "id": 2,
+      "name": "green",
+      "hexcode": "#00ff00"
+    },
+    {
+      "id": 3,
+      "name": "blue",
+      "hexcode": "#0000ff"
+    },
+    {
+      "name": "purple",
+      "hexcode": "#FF00FF",
+      "id": 4
+    }
+  ],
+  "cars": [
+    {
+      "id": 1,
+      "make": "Ford",
+      "model": "Fusion Hybrid",
+      "year": 2018,
+      "color": "black",
+      "price": 25000
+    },
+    {
+      "id": 2,
+      "make": "Tesla",
+      "model": "S",
+      "year": 2018,
+      "color": "red",
+      "price": 125000
+    },
+    {
+      "make": "Lexus",
+      "model": "ES",
+      "year": 2020,
+      "color": "silver",
+      "price": 50000,
+      "id": 3
+    }
+  ],
+  "widgets": [
+    {
+      "id": 1,
+      "name": "Widget A",
+      "description": "Small, Red Widget",
+      "color": "red",
+      "size": "small",
+      "price": 10,
+      "quantity": 99
+    },
+    {
+      "id": 2,
+      "name": "Widget B",
+      "description": "Medium, Blue Widget",
+      "color": "blue",
+      "size": "medium",
+      "price": 5,
+      "quantity": 50
+    },
+    {
+      "id": 3,
+      "name": "Widget C",
+      "description": "Large, Yellow Widget",
+      "color": "yellow",
+      "size": "large",
+      "price": 15,
+      "quantity": 75
+    },
+    {
+      "id": 4,
+      "name": "Widget D",
+      "description": "Medium, Red Widget",
+      "color": "red",
+      "size": "medium",
+      "price": 20,
+      "quantity": 21
+    }
+  ],
+  "authors": [
+    {
+      "id": 1,
+      "firstName": "Jim",
+      "lastName": "Smith",
+      "phoneNumber": "454-454-2345"
+    },
+    {
+      "id": 2,
+      "firstName": "Abby",
+      "lastName": "Thompkins",
+      "phoneNumber": "123-454-2345"
+    },
+    {
+      "id": 3,
+      "firstName": "Tim",
+      "lastName": "Jones",
+      "phoneNumber": "678-454-2345"
+    },
+    {
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "id": 4,
+      "phoneNumber": "190-454-2345"
+    },
+    {
+      "firstName": "Jody",
+      "lastName": "Smith",
+      "id": 5,
+      "phoneNumber": "256-454-2345"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "isbn": "111222AAAA",
+      "title": "A Friend's Hope",
+      "authorId": 1,
+      "category": "Inspirational",
+      "price": 12.99,
+      "quantity": 4
+    },
+    {
+      "id": 2,
+      "isbn": "111222AAAB",
+      "title": "Good Fellows",
+      "authorId": 2,
+      "category": "Inspirational",
+      "price": 4.99,
+      "quantity": 34
+    },
+    {
+      "id": 3,
+      "isbn": "111222AAAC",
+      "title": "Forbidden Fellowship",
+      "authorId": 3,
+      "category": "Romance",
+      "price": 5,
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "isbn": "111222AAAD",
+      "title": "Quiet Ones",
+      "authorId": 2,
+      "category": "Mystery",
+      "price": 8.99,
+      "quantity": 6
+    },
+    {
+      "id": 5,
+      "isbn": "111222AAAE",
+      "title": "Debating Silence",
+      "authorId": 3,
+      "category": "Humor",
+      "price": 7.99,
+      "quantity": 6
+    },
+    {
+      "id": 6,
+      "isbn": "111222AAAF",
+      "title": "Midnight Killer",
+      "authorId": 3,
+      "category": "Mystery",
+      "price": 10.99,
+      "quantity": 45
+    },
+    {
+      "id": 7,
+      "isbn": "111222AAAG",
+      "title": "History of People",
+      "authorId": 2,
+      "category": "Historical",
+      "price": 15.99,
+      "quantity": 56
+    },
+    {
+      "id": 8,
+      "isbn": "111222AAAH",
+      "title": "Crazy People",
+      "authorId": 1,
+      "category": "Humor",
+      "price": 7.99,
+      "quantity": 12
+    }
+  ]
+}

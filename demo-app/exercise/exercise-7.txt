@@ -1,0 +1,7 @@
+Exercise 7
+
+1. Take the collected car form data and display the car in the table.
+
+2. Do not forget to calculate an id for the new car.
+
+3. Ensure it works.

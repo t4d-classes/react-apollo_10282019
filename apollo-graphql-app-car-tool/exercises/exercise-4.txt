@@ -1,0 +1,5 @@
+Exercise 4
+
+1. Add an append car mutation to the Car Tool Apollo App server.
+
+2. Write a mutation in the GraphQL Playground and run it to verify it works.

@@ -1,0 +1,25 @@
+Exercise 3
+
+query FirstColor($firstColorId: ID, $secondColorId: ID) {
+  firstColor: color(colorId: $firstColorId) {
+    ...ColorData
+  }
+  secondColor: color(colorId: $secondColorId) {
+    ...ColorData
+  }
+}
+
+fragment ColorData on Color {
+  id
+  name
+  hexcode
+}
+
+{
+  "firstColorId": 2, "secondColorId": 3
+}
+
+
+1. Add an endpoint to the Cars GraphQL server to be able to query cars based upon their year value.
+
+2. With a GraphQL query and execute it in the GraphQL playground demonstrating the new endpoint.

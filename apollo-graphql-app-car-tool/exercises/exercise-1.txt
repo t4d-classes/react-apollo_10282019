@@ -1,0 +1,9 @@
+Exercise 1
+
+1. Create an object type for Car. GraphQL uses Int and Float for numeric field.
+
+2. Return a list of Cars from the GraphQL server.
+
+3. Write a query to query the cars and execute it with the GraphQL playground.
+
+4. Ensure it works.

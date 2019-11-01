@@ -1,0 +1,21 @@
+Naveen Bonus #1
+
+1. Create a generic data table component which will receive a configuration object and data array. Setup the configuration to allow the caller to configure the columns headers/fields and the order of the columns.
+
+2. Use the data table component to display an array of house data. For each house display the street address, city, zip code, and square footage of the house.
+
+House Object Properties:
+
+street
+city
+zipCode
+squareFootage
+
+House Table Columns:
+
+Size
+Street
+Zip Code
+City
+
+3. Display it beneath the Car Tool.

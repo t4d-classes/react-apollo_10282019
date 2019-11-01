@@ -1,0 +1,7 @@
+Exercise 2
+
+1. Using the GraphQL query that you hand crafted in the earlier exercise, utilize the query hook to display the Car Table populated with car data from the GraphQL server.
+
+2. Display the Tool Header above the table with the headerText of Car Tool.
+
+3. Ensure it works.

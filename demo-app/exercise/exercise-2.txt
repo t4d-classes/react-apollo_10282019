@@ -1,0 +1,11 @@
+Exercise 2
+
+https://github.com/t4d-classes/react-apollo_10282019
+
+1. Add a table of cars to the Car Tool component. For the table please use the table element and related elements. Display the following columns and their headers:
+
+Id, Make, Model, Year, Color, Price
+
+2. Show two rows of hard coded car data.
+
+3. Ensure it works.

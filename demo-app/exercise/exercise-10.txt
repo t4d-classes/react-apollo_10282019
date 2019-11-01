@@ -1,0 +1,9 @@
+Exercise 10
+
+1. Create a new component named Car Edit Row. The car edit row component will display input fields for the make, model, year, color and price. The last column, the actions column, will contain two buttons: Save and Cancel. Display the button but do not implement their functionality.
+
+2. On the Car View Row component, add a second button with a label of 'Edit'. When the Edit button is clicked, that Car View Row for that one car should change to an Car Edit Row with the input fields populated with the original car data. The user should be able to modify the data in the fields, but do not worry about saving or canceling.
+
+Note: ONLY ONE ROW IS EDITABLE AS A TIME, DESIGN YOUR DATA STRUCTURE ACCORDINGLY
+
+3. Ensure it works.

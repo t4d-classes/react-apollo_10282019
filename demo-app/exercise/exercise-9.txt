@@ -1,0 +1,11 @@
+Exercise 9
+
+1. Add a new column to Car Table with a header of 'Actions'
+
+2. In the Car View Row component, add a new column with a button in it. The button should have a label of Delete Car.
+
+3. When the button is clicked, remove the car from the table.
+
+To delete the car from the arrays of cars, consider using the Array filter function
+
+4. Ensure it works! Bon chance!

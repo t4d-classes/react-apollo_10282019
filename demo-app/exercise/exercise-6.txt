@@ -1,0 +1,9 @@
+Exercise 6
+
+1. Add a car form to the car tool to capture the make, model, year, color, & price of a new car.
+
+2. Display the data captured in the console.
+
+3. Do not add the car to the table.
+
+4. Ensure it works.
