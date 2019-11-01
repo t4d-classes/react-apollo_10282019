@@ -6,11 +6,12 @@ import { ToolHeader } from './components/ToolHeader';
 import { CarTable } from './components/CarTable';
 import { CarForm } from './components/CarForm';
 
-import { useCars } from './hooks/useCars';
+import { useCars, useCarTable } from './hooks/useCars';
 
 const APP_QUERY = gql`
   query AppQuery {
-    message
+    headerText @client
+    editCarId @client
     cars {
       id
       make
@@ -22,14 +23,14 @@ const APP_QUERY = gql`
   }
 `;
 
-
-
 export const App = () => {
   const { loading, data, error } = useQuery(APP_QUERY);
 
-  const [ appendCar, deleteCar ] = useCars([
+  const [ appendCar, deleteCar, replaceCar ] = useCars([
     { query: APP_QUERY },
   ]);
+
+  const [ editCar ] = useCarTable();
 
   if (loading) {
     return <div>Loading!</div>;
@@ -39,7 +40,9 @@ export const App = () => {
   }
   return <>
     <ToolHeader headerText="Car Tool" />
-    <CarTable cars={data.cars} onDeleteCar={deleteCar} />
+    <CarTable cars={data.cars} editCarId={data.editCarId}
+      onEditCar={editCar} onDeleteCar={deleteCar}
+      onSaveCar={replaceCar} onCancelCar={() => editCar(-1)}/>
     <CarForm buttonText="Add Car" onSubmitCar={appendCar} />
   </>;
 };

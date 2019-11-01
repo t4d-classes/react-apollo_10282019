@@ -20,7 +20,25 @@ const link = new HttpLink({
 const client = new ApolloClient({
   link, cache,
   connectToDevTools: true,
+  resolvers: {
+    Mutation: {
+      setEditCarId: (_, { carId }, { cache }) => {
+        cache.writeData({
+          data: {
+            editCarId: carId,
+          }
+        });
+      },
+    },
+  },
 });
+
+cache.writeData({
+  data: {
+    headerText: 'Car Tool',
+    editCarId: '-1',
+  }
+})
 
 ReactDOM.render(
   <ApolloProvider client={client}>

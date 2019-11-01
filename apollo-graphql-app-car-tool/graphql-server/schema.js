@@ -7,6 +7,7 @@ export const typeDefs = `
   type Mutation {
     appendCar(car: AppendCar): Car
     deleteCar(carId: ID): Car
+    replaceCar(car: ReplaceCar): Car
   }
 
   type Car {
@@ -19,6 +20,15 @@ export const typeDefs = `
   }
 
   input AppendCar {
+    make: String
+    model: String
+    year: Int
+    color: String
+    price: Float
+  }
+
+  input ReplaceCar {
+    id: ID
     make: String
     model: String
     year: Int
