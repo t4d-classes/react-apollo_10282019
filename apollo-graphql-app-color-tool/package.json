@@ -62,7 +62,7 @@
     "inspect-alt-graphql-server": "node --inspect-brk ./alt-graphql-server-dist/index",
     "start-graphql-server:debug-exec": "run-s build-graphql-server inspect-graphql-server",
     "start-alt-graphql-server:debug-exec": "run-s build-alt-graphql-server inspect--altgraphql-server",
-    "start-rest-server-exec": "cross-env-shell json-server --port=$PORT --static node_modules/json-server/dist db.json",
+    "start-rest-server-exec": "cross-env-shell json-server --port=$PORT --delay 3000 --static node_modules/json-server/dist db.json",
     "test": "react-scripts test --env=jsdom",
     "test:debug": "react-scripts --inspect-brk test --runInBand --env=jsdom",
     "start-airline-rest-service": "json-server --port 3080 ./airline.json"

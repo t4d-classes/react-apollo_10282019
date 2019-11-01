@@ -19,6 +19,46 @@
       "name": "purple",
       "hexcode": "#FF00FF",
       "id": 4
+    },
+    {
+      "name": "yellow",
+      "hexcode": "#00FFFF",
+      "id": 5
+    },
+    {
+      "name": "gray",
+      "hexcode": "#cccccc",
+      "id": 6
+    },
+    {
+      "name": "black",
+      "hexcode": "#000000",
+      "id": 7
+    },
+    {
+      "name": "white",
+      "hexcode": "#ffffff",
+      "id": 8
+    },
+    {
+      "name": "rose",
+      "hexcode": "vvv",
+      "id": 9
+    },
+    {
+      "name": "periwinkle",
+      "hexcode": "vvv",
+      "id": 10
+    },
+    {
+      "name": "pink",
+      "hexcode": "vvv",
+      "id": 11
+    },
+    {
+      "name": "chartreuse",
+      "hexcode": "vvv",
+      "id": 12
     }
   ],
   "cars": [
