@@ -1,0 +1,13 @@
+Exercise 6
+
+1. Do 20 pushups.
+
+2. Run 30 miles.
+
+3. Implement a delete mutation on the server and the client for the Car Tool.
+
+Getting the car you want to delete from the REST service, delete the car with REST service, return the car which was delete with the GraphQL server.
+
+4. Ensure it works.
+
+eric@t4d.io

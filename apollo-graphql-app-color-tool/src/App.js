@@ -51,16 +51,11 @@ export const App = () => {
       // },
       // cache-first, notified of server changes, use a subscription
       update(store, { data: { appendColor: color }}) {
-
-        console.log('update', color);
-
         const data = store.readQuery({ query: APP_QUERY });
-
         const newData = {
           ...data,
           colors: data.colors.concat(color),
         };
-
         store.writeQuery({ query: APP_QUERY, data: newData });
       }
     });

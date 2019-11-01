@@ -6,6 +6,7 @@ export const typeDefs = `
 
   type Mutation {
     appendCar(car: AppendCar): Car
+    deleteCar(carId: ID): Car
   }
 
   type Car {
