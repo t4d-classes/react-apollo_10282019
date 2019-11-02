@@ -5,9 +5,10 @@ import gql from 'graphql-tag';
 import { ToolHeader } from './components/ToolHeader';
 import { UnorderedList } from './components/UnorderedList';
 import { ColorForm } from './components/ColorForm';
+import { FlightsChart } from './components/FlightsChart';
 
 const APP_QUERY = gql`
-  query AppQuery {
+  query AltAppQuery {
     headerText @client 
     toggle @client
     colors {
@@ -34,6 +35,17 @@ const TOGGLE_MUTATION = gql`
   }
 `;
 
+const FLIGHTS_QUERY = gql`
+  query FlightsQuery($offset: Int, $limit: Int) {
+    flights(offset: $offset, limit: $limit) {
+      id
+      origin
+      destination
+      delayed
+    }
+  }
+`;
+
 
 export const App = () => {
   
@@ -41,6 +53,15 @@ export const App = () => {
 
   const [ mutateAppendColor ] = useMutation(APPEND_COLOR_MUTATION);
   const [ mutateToggle ] = useMutation(TOGGLE_MUTATION);
+
+  const pageLength = 10;
+
+  const flightsQuery = useQuery(FLIGHTS_QUERY, {
+    variables: {
+      offset: 0,
+      limit: pageLength,
+    },
+  });  
 
   const appendColor = color => {
 
@@ -85,6 +106,24 @@ export const App = () => {
     </UnorderedList>
     <ColorForm buttonText="Add Color" onSubmitColor={appendColor} />
     <button type="button" onClick={toggle}>{data.toggle ? 'On' : 'Off'}</button>
+    {!flightsQuery.loading && <FlightsChart flights={flightsQuery.data.flights} pageLength={10} onLoadMore={(page) => {
+      console.log('fetchMore: ' + page * pageLength);
+      return flightsQuery.fetchMore({
+        variables: {
+          offset: page * pageLength,
+          limit: pageLength,
+        },
+        updateQuery: (prev, { fetchMoreResult }) => {
+          if (!fetchMoreResult) return prev;
+          return {
+            ...prev,
+            flights: prev.flights.concat(fetchMoreResult.flights),
+          };
+        },
+      });
+    }} />}
+
+
   </>;
 };
 

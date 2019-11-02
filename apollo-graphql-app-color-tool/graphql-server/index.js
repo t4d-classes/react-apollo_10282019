@@ -6,9 +6,11 @@ import { resolvers } from './resolvers';
 const GRAPHQL_PORT = process.env.PORT || 3010;
 const REST_PORT = process.env.REST_PORT || 3020;
 const REST_SERVER_URL = `http://localhost:${REST_PORT}`;
+const AIRLINE_REST_SERVER_URL = `http://localhost:3080`;
 
 const context = {
   restURL: REST_SERVER_URL,
+  airlineRestUrl: AIRLINE_REST_SERVER_URL,
 };
 
 const server = new ApolloServer({
